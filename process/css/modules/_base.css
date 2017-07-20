@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+  line-height: 160%;
+  font-weight: $font-weight-normal;
+  color: $color-main;
+  background-color: $color-background;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-main;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: $font-weight-normal;
+  color: $white;
+}

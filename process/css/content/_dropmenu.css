@@ -1,0 +1,87 @@
+.dropdown {
+    display: inline-block;
+    .dropdown-content {
+        &:hover {
+            ul.navbar {
+                display: block;
+            }
+        }
+        @media $medium {
+            left: 0;
+            top: 41px;
+            background-color: $white;
+            position: absolute;
+            z-index: 10px;
+            box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+            span.hamburger-icon {
+                display: block;
+                width: 23px;
+                height: 35px;
+                
+                z-index: 10;
+                position: absolute;
+                top: -35px;
+                left: 0;
+                cursor: pointer;
+                background-image: url('../assets/shape.svg');
+                background-repeat: no-repeat;
+                &:hover, &:focus {
+                    .dropdown {
+                        display: block;
+                    }
+                }
+            }
+            ul.navbar {
+                display: none;
+                li {
+                    height: 42px;
+                    display: block;
+                    top: 0;
+                    margin: 0;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px;
+                        color: $black;
+                    }
+                    &:hover {
+                        background-color: #bbb;
+                        .hover_underline {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        position: relative;
+        display: inline-block;
+        background-color: transparent;
+        ul>li {
+            display: inline-block;
+        }
+        li {
+            margin-right: 54px;
+            position: relative;
+            bottom: 5px;
+            height: 30px;
+            padding: 0;
+            .hover_underline {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: $red;
+                bottom: 0px;
+            }
+            &:hover {
+                .hover_underline {
+                    display: inline-block;
+                }
+            }
+            &.last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

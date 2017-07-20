@@ -1,0 +1,22 @@
+$header-background-color: #000;
+$font-main: Roboto, Helvetica, Arial, sans-serif;
+$font-weight-normal: 300;
+$font-weight-bold: 400;
+$font-weight-heavy: 600;
+$color-main: #000; 
+$color-background: #fff;
+$white: #fff;
+$black: #000; 
+$logo-width: 191px;
+$red: #d0011b;
+
+$small: screen and (max-width: 800px);
+$medium: screen and (max-width: 1024px);
+$large: screen and (max-width: 1200px);
+
+$small-min: screen and (min-width: 800px);
+$medium-min: screen and (min-width: 1024px);
+$large-min: screen and (min-width: 1200px);
+
+
+

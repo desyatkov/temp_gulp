@@ -1,0 +1,23 @@
+#navigation-part {
+    background-color: $header-background-color;
+    padding-top: 13px;
+    height: 54px;
+    .branding {
+        display: inline-block;
+        img {
+            width: $logo-width;
+            margin-right: 38px;
+
+            @media $medium {
+                margin-right: 0;
+                margin-left: 40px;
+            }
+        }
+    }
+    .container {
+        max-width: 1200px;
+        position: relative;
+    }
+
+    @import '../content/_dropmenu.css';
+}
