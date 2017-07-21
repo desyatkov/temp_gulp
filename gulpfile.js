@@ -9,8 +9,9 @@ var gulp = require('gulp'),
   source = 'process/css/',
   sourcejs = 'process/js/',
   dest = 'builds/postcss/',
-  babel = require('gulp-babel');
-
+  babel = require('gulp-babel'),
+  browserify = require('gulp-browserify');
+  
 gulp.task('html', function() {
   gulp.src(dest + '*.html');
 });
@@ -29,6 +30,10 @@ gulp.task('css', function() {
 
 gulp.task('script', function() {
     gulp.src(sourcejs + 'app.js')
+        .pipe(browserify({
+          insertGlobals : true,
+          debug : !gulp.env.production
+        }))
         .pipe(babel({
             presets: ['es2015','stage-0']
         }))

@@ -1,5 +1,16 @@
-var obj1 = { foo: 'bar', x: 41 };
-var obj2 = { foo: 'baz', y: 13 };
+var $ = require("jquery");
 
-var clonedObj = { ...obj1 };
-console.log(clonedObj);
+
+$('li').hover( function(){
+    const $width = $( this ).width();
+    const $pos = $( this ).position();
+    
+
+    $( this ).find('.product-additional-content')
+        .width($width)
+        .css({left: $pos.left });
+})
+
+// $('#drag-list').scroll(function(){
+//     $('.product-additional-content').hide()
+// })

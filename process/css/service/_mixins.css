@@ -34,3 +34,14 @@
   text-align: center;
   line-height: 53px;
 }
+
+@define-mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

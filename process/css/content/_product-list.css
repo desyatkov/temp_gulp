@@ -1,19 +1,15 @@
-$card-width: 256px;
-
 .product-list {
     width: 100%;
     height: 130px;
     background-color: $white;
-    position: relative;
+    @mixin clearfix;
     
     overflow-x: auto;
     overflow-y: hidden;
-    &:hover {
-        // overflow-x: visible;
-    }
+    
     ul {
         height: auto;
-        min-width: calc($card-width*5);
+        
         @media $medium {
             width: calc($card-width*5);
         }
@@ -24,18 +20,76 @@ $card-width: 256px;
             float: left;
             width: 20%;
             min-width: 240px;
-            height: 130px;
+            height: $card-height;
             background-color: $white;
             border-right: 1px solid black;
             &.last {
                 border-right: 0 solid transparent;
             }
             &:hover {
-                height: 266px;
-                background-color: red;
-                position: relative;
-                // bottom: 136px;
+                .product-additional-content{
+                    bottom: -$card-height;
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
+
+            .product-additional-content {
+                cursor: default;
+                position: absolute;
+                bottom: calc(- 255px - $card-height);
+                left: 0;
+                height: 266px;
+                width: 255px;
+                background: $white;
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease .1s;
+                box-shadow: -3px 3px 23px rgba(0, 0, 0, 0.33);
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                .cta-bonus {
+                    margin-top: 20px;
+                }
+                .bonus {
+                    margin-top: 90px;
+                    text-align: center;
+                    .label{
+                        color: #4f4f4f;
+                        font-size: 12px;
+                        font-weight: 300;   
+                    }
+                    .bonus-content {
+                        color: #4f4f4f;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                }
+
+                .cta-bonus{
+                    .get-bonus-cta {
+                        @mixin button;
+                        width: 135px;
+                        height: 53px;
+                        display: inline-block;
+                    }
+                    span {
+                        float: right;
+                        padding-top: 14px;
+                        a {
+                            color: #4f4f4f;
+                            font-size: 13px;
+                            font-weight: 500; 
+                        }
+                    }
+                }
+                                        
+                
+            }
+
             @media $medium {
                 width: 20%;
             }
@@ -83,7 +137,8 @@ $card-width: 256px;
                         color: #bbb;
                         font-size: 12px;
                         font-weight: 400;
-                        line-height: 50px;
+                        line-height: 12px;
+                        margin-top: 18px;
                     }
                 }
             }
