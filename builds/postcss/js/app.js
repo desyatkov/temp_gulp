@@ -11170,9 +11170,5 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 				$(this).find('.product-additional-content').width($width).css({ left: $pos.left });
 			});
-
-			// $('#drag-list').scroll(function(){
-			//     $('.product-additional-content').hide()
-			// })
-		}).call(this, require("rH1JPG"), typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {}, require("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/fake_838b5909.js", "/");
+		}).call(this, require("rH1JPG"), typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {}, require("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/fake_7bc2237c.js", "/");
 	}, { "buffer": 2, "jquery": 4, "rH1JPG": 5 }] }, {}, [6]);

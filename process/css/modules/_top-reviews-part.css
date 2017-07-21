@@ -1,0 +1,9 @@
+#top-reviews-part {
+    height: 100vh;
+    background-color: $white;
+    width: 100%;
+    position: relative;
+    @media $small {
+        min-height: 1024px;
+    }
+}

@@ -11,6 +11,3 @@ $('li').hover( function(){
         .css({left: $pos.left });
 })
 
-// $('#drag-list').scroll(function(){
-//     $('.product-additional-content').hide()
-// })

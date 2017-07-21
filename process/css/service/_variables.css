@@ -14,7 +14,7 @@ $red: #d0011b;
 $card-width: 256px;
 $card-height: 130px;
 
-$small: screen and (max-width: 800px);
+$small: screen and (max-width: 850px);
 $medium: screen and (max-width: 1024px);
 $large: screen and (max-width: 1200px);
 
