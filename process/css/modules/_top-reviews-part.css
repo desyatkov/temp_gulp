@@ -10,31 +10,69 @@
 
     .cards-review {
         width: 100%;
+        .button {
+           @media $small {
+               margin-top: 30px;
+           } 
+        }
         ul {
+            @mixin clearfix;
             li {
                 float: left; 
                 width: 25%;
+                margin-bottom: 50px;
+                @media $medium-plus {
+                    width: 33%;
+                }
+                @media $small {
+                    width: 50%;
+                }
                 .review{
                     background-color: #eee;
                     max-width: 235px;
                     width: 235px;
                     margin: 0 auto;
                     &.last-child {
-                        @media $medium-plus {
-                            display: none;
+                            @media $medium-plus {
+                                display: none;
+                            }
+                            @media $small {
+                                display: block;
+                            }
                         }
-                    }
-
-                    .image {
-                        img {
-                            width: 100%;
-                            height: auto;
+                    
+                        .image {
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        } 
+                        .content {
+                            padding: 5px 15px;
+                            .title {
+                                color: #d0011b;
+                                font-size: 19px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                            .desc {
+                                color: #3c3c3c;
+                                font-size: 14px;
+                                font-weight: 300;
+                                line-height: 18px;
+                            }
+                            a {
+                                display: block;
+                                margin-top: 10px;
+                                color: #4f4f4f;
+                                font-size: 13px;
+                                font-weight: 400;
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
     .header {
         width: 100%;
