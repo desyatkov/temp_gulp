@@ -19,8 +19,9 @@ $medium: screen and (max-width: 1024px);
 $medium-plus: screen and (max-width: 1124px);
 $large: screen and (max-width: 1200px);
 
-$small-min: screen and (min-width: 800px);
+$small-min: screen and (min-width: 850px);
 $medium-min: screen and (min-width: 1024px);
+$medium-plus-min: screen and (min-width: 1124px);
 $large-min: screen and (min-width: 1200px);
 
 

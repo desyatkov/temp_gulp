@@ -1,0 +1,16 @@
+#footer-part{
+    background-color: #4d4d4d;
+
+    ul {
+        display: inline-block;
+        width: auto;
+        margin: 0 auto;
+        li {
+            display: inline-block;
+            a, span {
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+    }
+}
