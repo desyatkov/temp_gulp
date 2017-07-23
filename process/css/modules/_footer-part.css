@@ -1,15 +1,42 @@
 #footer-part{
     background-color: #4d4d4d;
-
-    ul {
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
-        li {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    .footer-copyright{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+        line-height: 13px;
+    }
+    .respectability {
+        margin-top: 5px;
+        text-align: center;
+        > a {
+            margin-right: 20px;
             display: inline-block;
-            a, span {
-                color: #fff;
-                font-size: 12px;
+        }
+    }
+    .link-list {
+
+        ul {
+            display: block;
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+            
+            li {
+                display: inline-block;
+                line-height: 9px;
+                a, span {
+                    color: #fff;
+                    font-size: 12px;
+                    
+                }
+
+                .vertical-bar {
+                    margin: 0 3px;
+                }
             }
         }
     }

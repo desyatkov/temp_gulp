@@ -9,7 +9,9 @@
     
     ul {
         height: auto;
-        
+        @media $list-point {
+            width: calc($card-width*5);
+        }
         @media $medium {
             width: calc($card-width*5);
         }

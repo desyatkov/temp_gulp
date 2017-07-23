@@ -1,5 +1,6 @@
 #features-comparison-part {
     height: 100vh;
+    max-height: $view-minh;
     background-color: $white;
     width: 100%;
     position: relative;
@@ -21,10 +22,13 @@
             color: #ffffff;
             font-size: 42px;
             line-height: 42px;
-            padding-top: 70px;
+            padding-top: 110px; 
             margin-bottom: 10px;
             @media $medium {
-                padding-top: 120px;
+                padding-top: 100px;
+            }
+            @media $extra-large-min {
+                padding-top: 140px;
             }
         }
         p {

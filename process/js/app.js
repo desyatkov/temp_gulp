@@ -1,13 +1,27 @@
 var $ = require("jquery");
 
+const $productItem = $('.product-item')
 
-$('li').hover( function(){
-    const $width = $( this ).width();
-    const $pos = $( this ).position();
-    
+function placeBox(el){
+    el.each(function( i, el ) {
+        const elem = $(this).find('.product-additional-content');
+        const $width = $( this ).width();
+        const $pos = $( this ).position();
 
-    $( this ).find('.product-additional-content')
-        .width($width)
-        .css({left: $pos.left });
-})
+        elem.width($width)
+            .css({left: $pos.left });
+    });
+}
+
+placeBox($productItem);
+
+$( window ).resize(function() {
+  placeBox($productItem);
+});
+
+$( ".product-list" ).scroll(function() {
+  placeBox($productItem);
+});
+
+
 

@@ -1,6 +1,7 @@
 #top-reviews-part {
     border-top: 2px solid #d8d8d8;
     height: 100vh;
+    max-height: $view-minh;
     background-color: $white;
     width: 100%;
     position: relative;
@@ -21,9 +22,7 @@
             @media $large-min {
                height: 310px;
             } 
-            @media $medium-plus {
-                height: 310px;
-            } 
+
             li {
                 float: left; 
                 width: 25%;

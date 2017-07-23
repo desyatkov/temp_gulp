@@ -11164,11 +11164,26 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		(function (process, global, Buffer, __argument0, __argument1, __argument2, __argument3, __filename, __dirname) {
 			var $ = require("jquery");
 
-			$('li').hover(function () {
-				var $width = $(this).width();
-				var $pos = $(this).position();
+			var $productItem = $('.product-item');
 
-				$(this).find('.product-additional-content').width($width).css({ left: $pos.left });
+			function placeBox(el) {
+				el.each(function (i, el) {
+					var elem = $(this).find('.product-additional-content');
+					var $width = $(this).width();
+					var $pos = $(this).position();
+
+					elem.width($width).css({ left: $pos.left });
+				});
+			}
+
+			placeBox($productItem);
+
+			$(window).resize(function () {
+				placeBox($productItem);
 			});
-		}).call(this, require("rH1JPG"), typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {}, require("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/fake_7bc2237c.js", "/");
+
+			$(".product-list").scroll(function () {
+				placeBox($productItem);
+			});
+		}).call(this, require("rH1JPG"), typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {}, require("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/fake_de6c5279.js", "/");
 	}, { "buffer": 2, "jquery": 4, "rH1JPG": 5 }] }, {}, [6]);

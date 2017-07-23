@@ -13,16 +13,19 @@ $logo-width: 191px;
 $red: #d0011b;
 $card-width: 256px;
 $card-height: 130px;
-
+$view-minh: 800px;
 $small: screen and (max-width: 850px);
 $medium: screen and (max-width: 1024px);
 $medium-plus: screen and (max-width: 1124px);
 $large: screen and (max-width: 1200px);
 
+$list-point: screen and (max-width: 1214px);
+
 $small-min: screen and (min-width: 850px);
 $medium-min: screen and (min-width: 1024px);
 $medium-plus-min: screen and (min-width: 1124px);
 $large-min: screen and (min-width: 1200px);
+$extra-large-min: screen and (min-width: 1500px);
 
 
 
