@@ -33,6 +33,9 @@
   font-size: 30px;
   text-align: center;
   line-height: 53px;
+  &:hover {
+    background-image: linear-gradient(to bottom,#fd0707 0,#fd0707 100%);
+  }
 }
 
 @define-mixin clearfix {

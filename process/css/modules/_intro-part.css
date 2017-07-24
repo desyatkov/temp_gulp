@@ -9,6 +9,24 @@
     min-height: 420px; 
     background-color: #222222;
     position: relative;
+
+    #shadow {
+        @media $list-point-min {
+            display: none;
+        }
+        position: absolute;
+        width: 200px;
+        height: 130px;
+        background-color: tomato;
+        right: 0;
+        bottom: -130px;
+        pointer-events: none;
+
+        background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+    }
     .container {
         height: 100%;
         position: relative;
@@ -67,7 +85,6 @@
                 width: 417px;
                 display: block;
                 margin: 40px auto;
-
             }
         }
     }

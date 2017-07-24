@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700');
 
 $header-background-color: #000;
 $font-main: Roboto, Helvetica, Arial, sans-serif;
@@ -20,12 +20,10 @@ $medium-plus: screen and (max-width: 1124px);
 $large: screen and (max-width: 1200px);
 
 $list-point: screen and (max-width: 1214px);
+$list-point-min: screen and (min-width: 1214px);
 
 $small-min: screen and (min-width: 850px);
 $medium-min: screen and (min-width: 1024px);
 $medium-plus-min: screen and (min-width: 1124px);
 $large-min: screen and (min-width: 1200px);
 $extra-large-min: screen and (min-width: 1500px);
-
-
-

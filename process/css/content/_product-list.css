@@ -7,6 +7,9 @@
     overflow-x: auto;
     overflow-y: hidden;
     
+    &::-webkit-scrollbar { 
+        display: none; 
+    }
     ul {
         height: auto;
         @media $list-point {
@@ -22,18 +25,19 @@
             float: left;
             width: 20%;
             min-width: 240px;
-            height: $card-height;
+            height: 90%;
             background-color: $white;
-            border-right: 1px solid black;
+            border-right: 2px solid #d3d2d3; 
+            margin-top: 26px; 
+
             &.last {
                 border-right: 0 solid transparent;
             }
-            &:hover {
-                .product-additional-content{
-                    bottom: -$card-height;
-                    opacity: 1;
-                    visibility: visible;
-                }
+
+            div.animate-card {
+                bottom: -$card-height;
+                opacity: 1;
+                visibility: visible;
             }
 
             .product-additional-content {
@@ -51,12 +55,15 @@
                 box-shadow: -3px 3px 23px rgba(0, 0, 0, 0.33);
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px;
+            
                 .cta-bonus {
                     margin-top: 20px;
                 }
                 .bonus {
-                    margin-top: 90px;
+                    margin-top: 26px;
                     text-align: center;
+                    padding-top: 90px;
+
                     .label{
                         color: #4f4f4f;
                         font-size: 12px;
@@ -105,9 +112,12 @@
                 width: 215px;
                 max-width: 215px;
                 margin: 0 auto;
-                padding-top: 24px;
+                height: 100%;
+
                 .left {
                     float: left;
+                    height: 79px;
+                    
                     .logo {
                         width: 111px;
                         height: 50px;
@@ -128,6 +138,7 @@
 
                 .right {
                     float: right;
+                    height: 79px;
                     .score {
                         line-height: 50px;
                         color: #0278d1;
